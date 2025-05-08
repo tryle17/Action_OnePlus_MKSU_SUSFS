@@ -40,6 +40,7 @@ on:
           - oneplus_ace5
           - oneplus_pad2_v
           - oneplus_13
+          - oneplus_13t
           - oneplus_ace5_pro
           - GitHub有bug可能不显示最后一项,误使用此项
       CPUD:
