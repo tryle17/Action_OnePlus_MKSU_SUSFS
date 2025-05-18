@@ -348,7 +348,8 @@ jobs:
         if: ${{ github.event.inputs.CPU != 'sm8650' && github.event.inputs.CPU != 'sm7675' }}
         run: |
          cd kernel_workspace
-         LTO=thin ./kernel_platform/oplus/build/oplus_build_kernel.sh ${{ github.event.inputs.CPUD }} consolidate
+         #LTO=thin ./kernel_platform/oplus/build/oplus_build_kernel.sh ${{ github.event.inputs.CPUD }} consolidate
+         ./kernel_platform/oplus/build/oplus_build_kernel.sh sun consolidate
 
       - name: Make AnyKernel3
         run: |
